@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background-image: url(images/cal.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align:right;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color:#ffff;
+    background-color: transparent;
+    pointer-events: none;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+}
+.buttons button:hover{
+    transition: scale(0.99);
+}
+#equal{
+    background-image: linear-gradient(45deg, blue, lightblue);
+    color: #fff;
+}
+#gray{
+    background-color: gray;
+    color: #fff;
+}
+.copyRight{
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 19px;
+}
+.copyRight i{
+    color: red;
+}
